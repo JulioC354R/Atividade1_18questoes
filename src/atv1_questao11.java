@@ -1,3 +1,13 @@
+/* Nome do Aluno:  Júlio César de Brito Herculano
+ * RA: 13523113793
+ * Nome do Programa: atv1_questao11
+ * Descrição: 11Faça um Programa que peça 2 números inteiros e um número real. Calcule e mostre:
+o produto do dobro do primeiro com metade do segundo .
+a soma do triplo do primeiro com o terceiro.
+o terceiro elevado ao cubo.
+ * Data: 04/04/2023
+ */
+
 import java.util.Scanner;
 
 public class atv1_questao11 {

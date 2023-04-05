@@ -1,3 +1,14 @@
+/* Nome do Aluno:  Júlio César de Brito Herculano
+ * RA: 13523113793
+ * Nome do Programa: atv1_questao13
+ * Descrição: 13Tendo como dado de entrada a altura (h) de uma pessoa, construa um algoritmo que calcule seu peso ideal,
+ utilizando as seguintes fórmulas:
+Para homens: (72.7*h) - 58
+Para mulheres: (62.1*h) - 44.7
+ * Data: 04/04/2023
+ */
+
+
 import java.util.Scanner;
 
 public class atv1_questao13 {

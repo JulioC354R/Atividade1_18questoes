@@ -1,3 +1,11 @@
+/* Nome do Aluno:  Júlio César de Brito Herculano
+ * RA: 13523113793
+ * Nome do Programa: atv1_questao8
+ * Descrição: 8Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. 
+ * Calcule e mostre o total do seu salário no referido mês.
+ * Data: 04/04/2023
+ */
+
 import java.util.Scanner;
 
 public class atv1_questao8 {
