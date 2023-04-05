@@ -1,4 +1,7 @@
+import java.util.Scanner;
+
 public class atv1_questao17 {
+
     public static void main(String[] args) throws Exception {
         // Faça um Programa para uma loja de tintas. O programa deverá pedir o tamanho em
          //metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de
@@ -10,51 +13,31 @@ public class atv1_questao17 {
         //misturar latas e galões, de forma que o desperdício de tinta seja menor. 
         //Acrescente 10% de folga e sempre arredonde os valores para cima, isto é, 
         //considere latas cheias.
-                int area;
-                double litros;
-                double latasP;
-                double galoes;
-                double latas2;
-                double galoes2;
-                double valorFP;   
-                double valorGaloes;
-                double valorGaloesEL; 
-                Scanner input;
-                // O programa deverá pedir o tamanho em metros quadrados da área a ser pintada.
-                System.out.println("insira o tamanho em metros quadrados da área a ser pintada.");
-        
-                input = new Scanner(System.in);
-                area = input.nextInt();
-                // calcular a quantidade de latas de tinta a serem compradas e o preco total
-                litros = area/6;
-        
-        
-                latasP = Math.ceil( litros / 18 );
-                valorFP = latasP * 80;
-        
-                galoes = Math.ceil( litros / 3.6 );
-                valorGaloes = galoes * 25;
-                
-                latas2 = Math.ceil( litros / 18 );
-                valorFP = latasP * 80;
-        
-                galoes2 = Math.ceil( litros / 3.6 );
-                valorGaloes = galoes * 25;
-        
-                galoes2 -= (latas2 * 5);
-        
-                valorGaloesEL = valorGaloes + valorFP;
-        
-                System.out.println("Quantidade de latas  necessárias: " + latasP + "     Valor Necessário: R$ " + valorFP);
-                System.out.println("Quantidade de galões necessários: " + galoes + "     Valor Necessário: R$ " + valorGaloes);
-                
-                
-                System.out.println("Usando latas e galões = "  + latas2 + " latas e " + galoes2 + " galões");
-                System.out.println("Valor necessário: R$ " + valorGaloesEL);
-        
             
-            }
-        }
-        
-        
+    System.out.println("Qual o tamanho em metros quadrados da área a ser pintada?");
+        Scanner teclado = new Scanner(System.in);
+        double area = teclado.nextInt();
+        teclado.close();
 
+        double litro = area / 6;
+        double folga = litro * (110 / 100);
+        double lata = Math.ceil(folga / 18);
+        double galoes = Math.ceil(lata / 5);
+        double apenaslata = Math.ceil(folga / 18);
+        double apenasgaloes = Math.ceil(folga / 3.6);
+        double precolata = lata *80;
+        double precogaloes = galoes * 25;
+        double precoapenaslata = apenaslata *80;
+        double precoapenasgaloes = apenasgaloes * 25;
+        double precototal = precogaloes + precolata;
+
+
+
+    System.out.println("Comprando apenas latas:  " + apenaslata +   "latas  custando um total de: R$ " + precoapenaslata);
+    System.out.println("Comprando apenas galões: " + apenasgaloes + "galões custando um total de: R$ " + precoapenasgaloes);
+    System.out.println("Comprando galões e latas: " + galoes + "galões e " + lata + " latas custando um total de: R$ " + precototal);
+
+
+
+    }
+}
